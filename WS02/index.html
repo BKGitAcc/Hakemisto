@@ -6,43 +6,71 @@
         <title>Web Development Website</title>
         <link rel="stylesheet" href="style.css">
         <style>
+            body {
+                background-color:khaki;
+                text-align:center;
+            }
             ul {
                 list-style-type: square;
                 color:seagreen;
             }
-            img {
+            #image1 {
                 width: 300px;
                 height:auto;
             }
-            h2 {
+            #image2 {
+                width: 200px;
+                height:auto;
+            }
+            h2, h3 {
                 font-family:Cambria, Cochin, Georgia;
                 color:seagreen;
-                font-size:medium;
-            }
-            body {
-                background-color:palegoldenrod;
+                font-size:larger;
             }
             p {
                 color:seagreen;
             }
             td, th {
-                color:darkcyan;
-                text-align:center
+                color:seagreen;
+                text-align:center;
+                border: 1px solid darkgreen;
+                padding: 6px;
                  }
             table {
-                background-color:gold;
+                background-color:palegoldenrod;
+                border-collapse:collapse;
+                margin: 0 auto;
+            }
+            .kasvilaatikko {
+                padding: 10px;
+                background-color:palegoldenrod;
+                margin: 10px;
+                border: 2px solid darkgreen;
+                text-align:center;
+            }
+            form {
+                background-color:lightyellow;
+                padding: 20px;
+            }
+            label {
+                color:seagreen;
             }
             .laatikko {
-                padding: 10px;
-                background-color:darkcyan;
+                background-color:lightyellow;
+            }
+            input {
+                background-color:whitesmoke;
+                border: 1px solid seagreen;
+                color:seagreen;
             }
         </style>
     </head>
     <body>
         <h1 style="color:darkgreen;">Benji Koivuranta</h1>
         <p>Olen Benji Koivuranta, 20-vuotias korkeakouluopiskelija.</p>
-        <img src="../Images/IMG_0264.jpg" alt="Kuva itsestäni">
+        <img src="../Images/IMG_0264.jpg" id="image1" alt="Kuva itsestäni">
         <h2>Asioita, joita harrastan:</h2>
+        <div class="laatikko">
             <ul>
                 <li>Kahvin juominen</li>
                 <li>Videopelien pelaaminen</li>
@@ -50,8 +78,11 @@
                 <li>Musiikin kuunteleminen</li>
                 <li>Videoiden katsominen kiinnostavista aiheista</li>
             </ul>
+        </div>
         <p>Katson videoita usein täältä:</p>
         <a href="https://www.youtube.com">YouTube</a>
+        <br>
+        <br>
         <h2>Joitakin kursseja, joita opiskelen tällä hetkellä:</h2>
         <table>
             <tr>
@@ -75,8 +106,9 @@
                 <td>01.01.2026-31.12.2026</td>
             </tr>
         </table>
-        <h2>Henkilötietolomake:</h2>
+        <br>
         <form>
+            <h2>Henkilötietolomake:</h2>
             <div>
                  <label for="etunimi">Etunimi:</label>
                  <input type="text" id="etunimi" name="etunimi">
@@ -97,9 +129,9 @@
             </div>
         </form>
         <br>
-        <div class="laatikko">
-            <h3></h3>
-            <p></p>
+        <div class="kasvilaatikko">
+            <h3>Tässä ottamani kuva kasvista:</h3>
+            <img src="../Images/IMG_0408.jpg" id="image2" alt="Kuva kasvista">
         </div>
     </body>
     </html>

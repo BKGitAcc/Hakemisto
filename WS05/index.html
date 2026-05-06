@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Development Website</title>
+        <style>
+
+            .asettelu {
+                display:flex;
+                flex-wrap:wrap;
+                background-color: cadetblue;
+                justify-content: space-between;
+            }
+
+            .sarake {
+                flex:1;
+                color:darkgreen;
+               background-color: darkgrey;
+               margin:10%;
+            }
+
+            @media (max-width:480px) {
+                .sarake {
+                    flex:100%;
+                }
+            }
+
+            .kuva {
+                max-width:50%;
+                height:auto;
+            }
+            
+        </style>
+
+    <body>
+
+            <div class="asettelu">
+                <div class="sarake">Sarake1</div>
+                <div class="sarake">Sarake2</div>
+            </div>
+
+            <br>
+
+            <img src="../Images/IMG_0411.jpg" alt="Kuva" class="kuva">
+
+    </body>

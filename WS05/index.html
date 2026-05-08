@@ -10,6 +10,11 @@
                 background-color:lavender;
             }
 
+            .menu {
+                color:darkgreen;
+                background-color:aquamarine;
+            }
+
             .asettelu {
                 display:flex;
                 flex-wrap:wrap;
@@ -55,7 +60,29 @@
                     background-color:khaki;
                 }
             }
+
+            .navigaatio .lista {
+                display:flex;
+            }
+
+            .navigaatio {
+                background-color:cornflowerblue;
+                padding:10%;
+            }
             
+            .lista {
+                justify-content:space-evenly;
+            }
+
+            @media (max-width:480px) {
+                .navigaatio .lista {
+                    display:none;
+                }
+                .navigaatio .menu {
+                    display:block;
+                }
+            }
+
         </style>
 
     <body>
@@ -75,9 +102,9 @@
 
             <br>
 
-            <nav class="Navigaatio">
-                <button class="Menu">Menu</button>
-                <ul class="Lista">
+            <nav class="navigaatio">
+                <button class="menu">Menu</button>
+                <ul class="lista">
                     <li><a href="#">Etusivu</a></li>
                     <li><a href="#">Tietoja</a></li>
                     <li><a href="#">Yhteystiedot</a></li>

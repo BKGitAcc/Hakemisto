@@ -6,6 +6,10 @@
         <title>Web Development Website</title>
         <style>
 
+            body {
+                background-color:lavender;
+            }
+
             .asettelu {
                 display:flex;
                 flex-wrap:wrap;
@@ -16,7 +20,7 @@
             .sarake {
                 flex:1;
                 color:darkgreen;
-               background-color: darkgrey;
+               background-color:aquamarine;
                margin:10%;
             }
 
@@ -29,6 +33,27 @@
             .kuva {
                 max-width:50%;
                 height:auto;
+                margin:10%;
+            }
+
+            .värilaatikko {
+                background-color: blueviolet;
+                color:cornflowerblue;
+                margin:10%;
+                padding:30%;
+                font-size:200%;
+            }
+
+            @media (max-width:480px) {
+                .värilaatikko {
+                    background-color:darkseagreen;
+                }
+            }
+
+            @media (min-width:481px) and (max-width:700px) {
+                .värilaatikko {
+                    background-color:khaki;
+                }
             }
             
         </style>
@@ -43,5 +68,20 @@
             <br>
 
             <img src="../Images/IMG_0411.jpg" alt="Kuva" class="kuva">
+
+            <br>
+
+            <div class="värilaatikko">Laatikko.</div>
+
+            <br>
+
+            <nav class="Navigaatio">
+                <button class="Menu">Menu</button>
+                <ul class="Lista">
+                    <li><a href="#">Etusivu</a></li>
+                    <li><a href="#">Tietoja</a></li>
+                    <li><a href="#">Yhteystiedot</a></li>
+                </ul>
+            </nav>
 
     </body>

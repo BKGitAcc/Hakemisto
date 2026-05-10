@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+    <html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Development Website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-color:khaki;
+                text-align:center;
+            }
+            ul {
+                list-style-type: square;
+                color:seagreen;
+            }
+            #image1 {
+                width: 300px;
+                height:auto;
+            }
+            #image2 {
+                width: 200px;
+                height:auto;
+            }
+            h2, h3 {
+                font-family:Cambria, Cochin, Georgia;
+                color:seagreen;
+                font-size:larger;
+            }
+            p {
+                color:seagreen;
+            }
+            td, th {
+                color:seagreen;
+                text-align:center;
+                border: 1px solid darkgreen;
+                padding: 6px;
+                 }
+            table {
+                background-color:palegoldenrod;
+                border-collapse:collapse;
+                margin: 0 auto;
+            }
+            .kasvilaatikko {
+                padding: 10px;
+                background-color:palegoldenrod;
+                margin: 30px;
+                border: 2px solid darkgreen;
+                text-align:center;
+            }
+            form {
+                background-color:lightyellow;
+                padding: 20px;
+            }
+            label {
+                color:seagreen;
+            }
+            .laatikko {
+                background-color:lightyellow;
+            }
+            input {
+                background-color:whitesmoke;
+                border: 1px solid seagreen;
+                color:seagreen;
+            }
+            input[type="submit"] {
+                cursor:pointer;
+                border-radius: 50px;
+            }
+
+            .nappi {
+                background-color:seagreen;
+                padding:30px;
+                color:khaki;
+                cursor:pointer;
+                transition:background-color 0,3s ease;
+            }
+
+            .nappi:hover {
+                background-color:lightskyblue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="color:darkgreen;">Benji Koivuranta</h1>
+        <p>Olen Benji Koivuranta, 20-vuotias korkeakouluopiskelija.</p>
+        <img src="../Images/IMG_0264.jpg" id="image1" alt="Kuva itsestäni">
+        <h2>Asioita, joita harrastan:</h2>
+        <div class="laatikko">
+            <ul>
+                <li>Kahvin juominen</li>
+                <li>Videopelien pelaaminen</li>
+                <li>Asioiden pohtiminen</li>
+                <li>Musiikin kuunteleminen</li>
+                <li>Videoiden katsominen kiinnostavista aiheista</li>
+            </ul>
+        </div>
+        <p>Katson videoita usein täältä:</p>
+        <a href="https://www.youtube.com">YouTube</a>
+        <br>
+        <br>
+        <h2>Joitakin kursseja, joita opiskelen tällä hetkellä:</h2>
+        <table>
+            <tr>
+                <th>Nimi</th>
+                <th>Laajuus</th>
+                <th>Ajoitus</th>
+            </tr>
+            <tr>
+                <td>Liiketoimintaympäristöt</td>
+                <td>5 op</td>
+                <td>11.03.2026-24.05.2026</td>
+            </tr>
+            <tr>
+                <td>Websivuston kehittäminen</td>
+                <td>5 op</td>
+                <td>18.03.2026-30.05.2026</td>
+            </tr>
+            <tr>
+                <td>Java-ohjelmointi</td>
+                <td>5 op</td>
+                <td>01.01.2026-31.12.2026</td>
+            </tr>
+        </table>
+        <br>
+        <form>
+            <h2>Henkilötietolomake:</h2>
+            <div>
+                 <label for="etunimi">Etunimi:</label>
+                 <input type="text" id="etunimi" name="etunimi">
+            </div>
+            <br>
+            <div>
+                 <label for="sukunimi">Sukunimi:</label>
+                 <input type="text" id="sukunimi" name="sukunimi">
+            </div>
+            <br>
+            <div>
+                 <label for="sähköposti">Sähköpostiosoite:</label>
+                <input type="email" id="sähköposti" name="sähköposti">   
+            </div>
+            <br>
+            <div>
+                <input type="submit">  
+            </div>
+        </form>
+        <br>
+        <div class="kasvilaatikko">
+            <h3>Tässä ottamani kuva kasvista:</h3>
+            <img src="../Images/IMG_0408.jpg" id="image2" alt="Kuva kasvista">
+        </div>
+
+        <button class="nappi">Nappi</button>
+
+    </body>
+    </html>

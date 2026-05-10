@@ -71,6 +71,7 @@
             .nappi {
                 background-color:seagreen;
                 padding:30px;
+                margin:20px;
                 color:khaki;
                 cursor:pointer;
                 transition:background-color 0,3s ease;
@@ -78,6 +79,23 @@
 
             .nappi:hover {
                 background-color:lightskyblue;
+            }
+
+            .animaatio {
+                width:30px;
+                height:30px;
+                background-color:seagreen;
+                position:relative;
+                animation:move 4s infinite alternate;
+            }
+
+            @keyframes move {
+                from {
+                    left:0;
+                }
+                to {
+                    left:300px;
+                }
             }
 
         </style>
@@ -150,8 +168,9 @@
             <h3>Tässä ottamani kuva kasvista:</h3>
             <img src="../Images/IMG_0408.jpg" id="image2" alt="Kuva kasvista">
         </div>
-
+        <br>
         <button class="nappi">Nappi</button>
-
+        <br>
+        <div class="animaatio"></div>
     </body>
     </html>

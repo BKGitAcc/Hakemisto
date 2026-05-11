@@ -67,7 +67,6 @@
                 cursor:pointer;
                 border-radius: 50px;
             }
-
             .nappi {
                 background-color:seagreen;
                 padding:30px;
@@ -76,11 +75,9 @@
                 cursor:pointer;
                 transition:background-color 0,3s ease;
             }
-
             .nappi:hover {
                 background-color:lightskyblue;
             }
-
             .animaatio {
                 width:30px;
                 height:30px;
@@ -88,7 +85,6 @@
                 position:relative;
                 animation:move 4s infinite alternate;
             }
-
             @keyframes move {
                 from {
                     left:0;
@@ -97,28 +93,34 @@
                     left:300px;
                 }
             }
-
             .lista li:nth-child(odd) {
                 background-color:lightgreen;
                 color:darkgreen;
             }
-
             .lista li:nth-child(even) {
                 background-color:lightblue;
                 color:darkblue;
             }
-
             .grayscale {
                 height:500px;
                 width:auto;
                 filter:grayscale(100%);
                 transition: filter 1s ease;
             }
-
             .grayscale:hover {
                 filter:grayscale(0%);
             }
-
+            .lainaus {
+                font-family: Cambria, Cochin, Georgia;
+                color:darkgreen;
+                background-color:lightgreen;
+                padding:20px;
+            }
+            .lainaus::before {
+                content:'"';
+                font-size:50px;
+                color:darkorange;
+            }
         </style>
     </head>
     <body>
@@ -204,5 +206,9 @@
         </ul>
         <br>
         <img src="../Images/20240616_165455.jpg" alt="Kuva eri kasvista" class="grayscale">
+        <br>
+        <blockquote class="lainaus">
+            Tämä on lainaus.
+        </blockquote>
     </body>
     </html>

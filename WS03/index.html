@@ -108,6 +108,17 @@
                 color:darkblue;
             }
 
+            .grayscale {
+                height:500px;
+                width:auto;
+                filter:grayscale(100%);
+                transition: filter 1s ease;
+            }
+
+            .grayscale:hover {
+                filter:grayscale(0%);
+            }
+
         </style>
     </head>
     <body>
@@ -191,5 +202,7 @@
             <li>Vihreä</li>
             <li>Sininen</li>
         </ul>
+        <br>
+        <img src="../Images/20240616_165455.jpg" alt="Kuva eri kasvista" class="grayscale">
     </body>
     </html>

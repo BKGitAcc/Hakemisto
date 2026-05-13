@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Development Website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            header {
+                background-color:aquamarine;
+                padding:50px;
+            }
+
+            .värilaatikko {
+                padding:30px;
+                margin:100px 100px;
+                background-color:darkgray;
+                text-align:center;
+            }
+
+            @media (max-width:480px) {
+                .värilaatikko {
+                    background-color:cornflowerblue;
+                }
+            }
+
+            @media (min-width:700px) {
+                .värilaatikko {
+                    background-color:gold;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Sivun otsikko</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#tietoja">Tietoja</a></li>
+                    <li><a href="#palvelut">Palvelut</a></li>
+                    <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="tietoja">
+                <h2>Tietoja sivusta</h2>
+                <div class="värilaatikko">Vaihtaa väriä näytön koon perusteella</div>
+
+            </section>
+        </main>
+
+
+
+    </body>

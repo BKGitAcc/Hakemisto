@@ -7,41 +7,38 @@
         <link rel="stylesheet" href="style.css">
         <style>
             header {
-                background-color:aquamarine;
+                background-color:cornflowerblue;
                 padding:50px;
+                color:darkslateblue;
             }
-
             .värilaatikko {
                 padding:30px;
-                margin:100px 100px;
+                margin:50px 200px;
                 background-color:darkgray;
                 text-align:center;
             }
-
             @media (max-width:480px) {
                 .värilaatikko {
                     background-color:cornflowerblue;
                 }
             }
-
             @media (min-width:769px) {
                 .värilaatikko {
                     background-color:gold;
                 }
             }
-
             main {
-                background-color:aliceblue;
+                background-color:lightsteelblue;
                 color:darkslateblue;
+                text-align:center;
+                padding:20px;
             }
-
             .ruudukko {
                 display:grid;
                 grid-template-columns:repeat(3, 1fr);
                 grid-gap:20px;
                 background-color:greenyellow;
             }
-
             .ruutu {
                 background-color:darkseagreen;
                 padding:40px;
@@ -49,7 +46,27 @@
                 font-size:20px;
                 margin:10px;
             }
-
+            .flex {
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                padding:30px;
+            }
+            .laatikko {
+                background-color:lightseagreen;
+                padding:40px;
+            }
+            footer {
+                color:darkslateblue;
+                background-color:cornflowerblue;
+                padding:20px;
+            }
+            #palvelut {
+                background-color:skyblue;
+                color:darkslateblue;
+                text-align:center;
+                padding:20px;
+            }
         </style>
     </head>
     <body>
@@ -78,15 +95,28 @@
                     <div class="ruutu">5</div>
                     <div class="ruutu">6</div>
                 </div>
-
-
-
-                <div class="värilaatikko">Vaihtaa väriä näytön koon perusteella</div>
+                <br>
         </main>
+        <section id="palvelut">
+            <h3>Sivun osio</h3>
+               <div class="flex">
+                    <div class="laatikko">A</div>
+                    <div class="laatikko">B</div>
+                    <div class="laatikko">C</div>
+                </div>
+                <br>
+                <div class="värilaatikko">Tämä laatikko vaihtaa väriä näytön koon perusteella.</div>
+                <br>
+        </section>
         <footer>
-
-
+            <section id="yhteystiedot">
+            <h4>Yhteystiedot:</h3>
+            <ul>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+            </ul>
+            </section>
         </footer>
-
-
     </body>
+    </html>

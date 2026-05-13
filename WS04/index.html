@@ -24,10 +24,30 @@
                 }
             }
 
-            @media (min-width:700px) {
+            @media (min-width:769px) {
                 .värilaatikko {
                     background-color:gold;
                 }
+            }
+
+            main {
+                background-color:aliceblue;
+                color:darkslateblue;
+            }
+
+            .ruudukko {
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                grid-gap:20px;
+                background-color:greenyellow;
+            }
+
+            .ruutu {
+                background-color:darkseagreen;
+                padding:40px;
+                text-align:center;
+                font-size:20px;
+                margin:10px;
             }
 
         </style>
@@ -47,11 +67,26 @@
         <main>
             <section id="tietoja">
                 <h2>Tietoja sivusta</h2>
+                <p>Tähän tulisi tietoja sivusta.</p>
+                </section>
+                <br>
+                <div class="ruudukko">
+                    <div class="ruutu">1</div>
+                    <div class="ruutu">2</div>
+                    <div class="ruutu">3</div>
+                    <div class="ruutu">4</div>
+                    <div class="ruutu">5</div>
+                    <div class="ruutu">6</div>
+                </div>
+
+
+
                 <div class="värilaatikko">Vaihtaa väriä näytön koon perusteella</div>
-
-            </section>
         </main>
+        <footer>
 
+
+        </footer>
 
 
     </body>
